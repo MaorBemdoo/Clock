@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: darkslategray;
+}
+
+header{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+#redirect{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+main{
+    color: whitesmoke;
+}
+
+#_b1{
+    background-color: rgba(173, 171, 171, 0.123);
+    border-radius: 57% 43% 74% 26% / 49% 50% 50% 51%;
+    height: 300px;
+    width: 300px;
+    animation: bubbleMove ease 100s infinite alternate;
+    animation-delay: 1s;
+}
+
+#p_div{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#_div{
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+}
+
+#_div p{
+    font-size: 5rem;
+}
+
+.session{
+    display: grid;
+    place-items: center;
+    font-size: 6rem;
+}
+
+@keyframes bubbleMove {
+    0%{
+    top: 0%;
+    left: 0%;
+}   25%{
+    border-radius: 14% 86% 78% 22% / 49% 50% 50% 51%;
+    top: 50%;
+    left: 25%;
+}   50%{
+    top: 0%;
+    left: 50%;
+}   75%{
+    border-radius: 74% 26% 34% 66% / 62% 15% 85% 38%;
+    top: 50%;
+    left: 75%;
+}   100%{
+    top: 10%;
+    left: 80%;
+}
+}
