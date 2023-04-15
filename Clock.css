@@ -33,6 +33,9 @@ main{
 }
 
 #p_div{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
@@ -71,4 +74,12 @@ main{
     top: 10%;
     left: 80%;
 }
+}
+
+@media(max-width: 806px){
+    #p_div{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
